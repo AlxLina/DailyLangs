@@ -1,0 +1,38 @@
+header{
+    width: 85vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5vh;
+    margin-left: 7vw;
+    margin-bottom: 7vh;
+    align-items: center;
+    
+    .navigation{
+        height: inherit;
+        display: flex;
+        // flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        gap: 3vw;
+        align-items: center;
+        cursor: pointer;
+        .lang{
+
+                img{
+                    align-self: center;
+                }
+        }
+
+        .courses{
+            color: $violet;
+        }
+        > *{
+            padding: 0 1vw;
+        }
+        a{
+            text-decoration: none;
+        }
+
+    }
+}

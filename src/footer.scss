@@ -1,0 +1,28 @@
+footer{
+    margin-top: 10vh;
+    height: 20%;
+    width: 100%;
+    background-color: $violet;
+    text-align: center;
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-top: 5vh;
+        .linksDocs{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            a{
+                color: #fff;
+                text-decoration: none;
+                padding-bottom: 1vh;
+            }
+        }
+    }
+    .rights{
+        color: #ffffff;
+        display: inline-block;
+        padding-top: 6vh;
+    }
+}

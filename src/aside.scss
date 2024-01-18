@@ -1,0 +1,136 @@
+@import './variables.scss';
+
+
+.left_content{
+    position: relative;
+    margin-top: 1vh;
+    > *{
+        margin-top: 1vh;
+        margin-bottom: 3vh;
+    }
+    .dropbtn {
+        background-color: $violet;
+        color: white;
+        padding: 14px 60px;
+        font-size: 18px;
+        border: none;
+        border-radius: 40px;
+        display: flex;
+        justify-content: space-between;
+        > * {
+            margin: 0 1vw;
+        }
+      }
+      
+      .dropdown {
+        position: relative;
+        display: inline;
+        &:hover .dropdown-content {display: block;}
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: $violet;
+        min-width: 160px;
+        z-index: 1;
+        a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            &:hover {background-color: $violet;}
+          }
+      }
+
+      .filters{
+        display: none;
+      }
+      .slider{
+        height: 1px;
+        position: relative;
+        background-color: $violet;
+      }
+
+      .range-input{
+        position: relative;
+        input{
+            position: absolute;
+            width: 100%;
+            height: 5px;
+            top: -5px;
+            background: none;
+            pointer-events: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            &[type="range"]::-webkit-slider-thumb{
+                height: 14px;
+                width: 14px;
+                border-radius: 50%;
+                background: $violet;
+                pointer-events: auto;
+                -webkit-appearance: none;
+              }
+              &[type="range"]::-moz-range-thumb{
+                height: 14px;
+                width: 14px;
+                border-radius: 50%;
+                background: $violet;
+                pointer-events: auto;
+                -moz-appearance: none;
+              }
+          }
+      }
+
+      .complexity{
+        display: flex;
+        flex-direction: column;
+        label{
+            flex-direction: column;
+        }
+    }
+
+    label:not(:last-child){
+        margin-bottom: 1vh;
+    }
+    .form_radio_btn {
+        @include checkBtn();
+        span {
+            border-radius: 50%;
+        }
+    }
+    .form_checkbox{
+        @include checkBtn();
+    }
+    .duration{
+        .title{
+            margin-top: 4vh;
+        }
+    }
+    .title{
+        font-weight: 600;
+        margin-bottom: 2vh;
+        margin-top: 2vh;
+    }
+    .last{
+        font-weight: 500;
+        margin-bottom: 1vh;
+    }
+    picture{
+        position: absolute;
+        z-index: -1;
+        top: 45vh;
+        left: -2vw;
+        svg{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .skills{
+        display: flex;
+        flex-direction: column;
+    }
+
+}

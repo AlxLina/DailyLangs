@@ -1,0 +1,175 @@
+@media (min-width: 1200px){
+    .menu_burger{
+        display: none;
+    }
+}
+
+@media (max-width: 1200px){
+    .menu_burger{
+        display: none;
+    }
+}
+
+@media (max-width: 992px){
+    .menu_burger{
+        display: none;
+    }
+    .mainContent{
+        .title{
+            font: {
+                size: 36px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .content{
+        .card{
+            max-width: 365px;
+            max-height: 303px;
+            .text{
+                font: {
+                    size: 18px;
+                }
+            
+            }
+            .girlpic{
+                top: 26%;
+                width: 90%;
+                img{
+                    max-width: 187px;
+                    width: 100%;
+                }
+            }
+            .name{
+                font-size: 12px;
+            }
+            .more{
+                img{
+                    max-width: 101px;
+                    width: 100%;
+                }
+            }
+            .price{
+                font-size: 36px;
+            }
+            .sale_price{
+                font-size: 18px;
+            }
+            .sale_percent{
+                font-size: 8px;
+            }
+            .eng_flag{
+                img{
+                    max-width: 52px;
+                    width: 100%;
+                }
+            }
+            .bg_pic{
+                img{
+                    max-width: 183px;
+                }
+            }
+        }
+    }
+    .navigation{
+        text-align: right;
+        flex-direction: row-reverse;
+        > *{
+            &:not(.login){
+                display: none;
+            }
+        }
+        .lang{
+            display: none;
+        }
+        .menu_burger{
+            display: inline-block;
+            &:hover{
+                .drop_content{
+                    display: block;
+                }
+            }
+        }
+        
+    }
+
+
+    .left_content{
+        display: flex;
+        flex-direction: row;
+        gap: 2vw;
+        .menu_options{
+            display: none;
+        }
+        .filters{
+            display: inline-block;
+        }
+        
+    }
+
+    main{
+        flex-direction: column;
+    }
+
+}
+
+
+@media (max-width: 480px){
+
+    header{
+        .name{
+            svg{
+                width: 131px;
+            }
+        }
+        .navigation{
+            .login{
+                img{
+                    width: 33px;
+                }
+            }
+        }
+
+    }
+
+    main{
+        width: 90%;
+    }
+
+    .mainContent{
+        .title{
+            font: {
+                size: 32px;
+            }
+        }
+    }
+
+    footer{
+        .linksDocs{
+            a{
+                font-size: 14px;
+            }
+        }
+        .logo{
+            img{
+                max-width: 125px;
+                width: 100%;
+            }
+        }
+        .rights{
+            font-size: 14px;
+        }
+    }
+}
+
+@media (max-width: 375px){
+    .mainContent{
+        .title{
+            font: {
+                size: 28px;
+            }
+        }
+    }
+}

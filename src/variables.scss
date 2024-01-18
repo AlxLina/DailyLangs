@@ -1,0 +1,28 @@
+$violet: #C05AFF;
+$green: #C9FF50;
+$pink: #FF50BA;
+$yellow: #FFFD50;
+$font: Mulish;
+
+@mixin checkBtn{
+    input { display: none;}
+    span {
+     display: inline-block;
+     width: 12px; height: 12px;
+     border: 1px solid gray;
+    }
+    input:checked + span { 
+     background: $violet;
+    }
+}
+
+@mixin textContent{
+    margin: 0;
+    font: {
+        family: Mulish;
+        weight: 500;
+        size: 18px;
+    }
+    width: 100%;
+}
+
